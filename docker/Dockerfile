@@ -56,8 +56,8 @@ RUN conda install -y python=${python_version} && \
       scikit-learn \
       six \
       theano && \
-    git clone -b dev-2.1.6 --single-branch git://github.com:gnekic/keras.git /src && pip install -e /src[tests] && \
-    pip install git+git://github.com:gnekic/keras.git@2.1.6 && \
+    git clone -b dev-2.1.6 --single-branch git://github.com/gnekic/keras.git /src && pip install -e /src[tests] && \
+    pip install git+git://github.com/gnekic/keras.git@2.1.6 && \
     conda clean -yt
 
 ADD theanorc /home/keras/.theanorc
