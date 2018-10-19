@@ -39,10 +39,10 @@ RUN conda install -y python=${python_version} && \
     pip install --upgrade pip && \
     pip install \
       sklearn_pandas \
-      tensorflow-gpu==1.8\
       cntk-gpu && \
     conda install \
       bcolz \
+      tensorflow-gpu=1.8\
       h5py \
       matplotlib \
       mkl \
