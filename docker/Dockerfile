@@ -42,7 +42,7 @@ RUN conda install -y python=${python_version} && \
       cntk-gpu && \
     conda install \
       bcolz \
-      tensorflow-gpu=1.8\
+      tensorflow-gpu=1.9\
       h5py \
       matplotlib \
       mkl \
